@@ -1,4 +1,4 @@
-# clean-code-javascript
+# 清晰javascripts代码
 
 ## Table of Contents
   1. [Introduction](#introduction)
@@ -385,7 +385,7 @@ some logic.
 
 Imagine if you run a restaurant and you keep track of your inventory: all your
 tomatoes, onions, garlic, spices, etc. If you have multiple lists that
-you keep this on, then all have to be updated when you serve a dish with
+     Updated: 2018/07/30 14:17:48 by lin.wang1        ###   ########.fr         
 tomatoes in them. If you only have one list, there's only one place to update!
 
 Oftentimes you have duplicate code because you have two or more slightly
