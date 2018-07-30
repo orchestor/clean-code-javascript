@@ -1,4 +1,4 @@
-# 清晰javascripts代码
+# 清晰javascripts代码－－如何提高代码质量
 
 ## Table of Contents
   1. [Introduction](#introduction)
@@ -21,7 +21,7 @@ you shout when reading code](http://www.osnews.com/images/comics/wtfm.jpg)
 Software engineering principles, from Robert C. Martin's book
 [*Clean Code*](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882),
 adapted for JavaScript. This is not a style guide. It's a guide to producing
-[readable, reusable, and refactorable](https://github.com/ryanmcdermott/3rs-of-software-architecture) software in JavaScript.
+[易读，可再用，可重构](https://github.com/ryanmcdermott/3rs-of-software-architecture) software in JavaScript.
 
 Not every principle herein has to be strictly followed, and even fewer will be
 universally agreed upon. These are guidelines and nothing more, but they are
@@ -51,6 +51,7 @@ const yyyymmdstr = moment().format('YYYY/MM/DD');
 
 **Good:**
 ```javascript
+const moment = require('moment');
 const currentDate = moment().format('YYYY/MM/DD');
 ```
 **[⬆ back to top](#table-of-contents)**
@@ -251,7 +252,7 @@ createMenu({
 **[⬆ back to top](#table-of-contents)**
 
 
-### Functions should do one thing
+### 函数做一个功能
 This is by far the most important rule in software engineering. When functions
 do more than one thing, they are harder to compose, test, and reason about.
 When you can isolate a function to just one action, they can be refactored
@@ -385,7 +386,7 @@ some logic.
 
 Imagine if you run a restaurant and you keep track of your inventory: all your
 tomatoes, onions, garlic, spices, etc. If you have multiple lists that
-     Updated: 2018/07/30 14:17:48 by lin.wang1        ###   ########.fr         
+     Updated: 2018/07/30 15:00:52 by lin.wang1        ###   ########.fr         
 tomatoes in them. If you only have one list, there's only one place to update!
 
 Oftentimes you have duplicate code because you have two or more slightly
